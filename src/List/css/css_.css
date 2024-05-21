@@ -1,0 +1,56 @@
+.Elementsflex {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: auto;
+}
+
+.countries-flex > img {
+  display: block;
+  margin: auto;
+  height: 50px;
+  width: auto;
+}
+
+.countries-flex {
+  display: inline-flex;
+  padding: 10px;
+  height: auto;
+  border: 5px;
+  margin: 5px;
+}
+
+.countries-flex > :nth-child(3) {
+  font-size: 1em;
+  height: 1.5em;
+  overflow: hidden;
+}
+
+.countries-flex:hover > :nth-child(3) {
+  overflow: visible;
+  height: auto;
+}
+
+.countries-flex > :nth-child(1) {
+  text-align: center;
+}
+
+.countries-flex {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 500px) {
+  .Elementsflex {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .countries-flex > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .countries-flex > :nth-child(1) {
+    font: 100%;
+  }
+}
